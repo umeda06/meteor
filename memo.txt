@@ -1,0 +1,19 @@
+・mongoシェルの起動
+meteor mongo
+
+・コレクションへのデータ挿入
+db.tasks.insert({ text: "Hello world!", createdAt: new Date() });
+
+・コレクションの参照
+db.tasks.find({});
+
+・コレクションの更新
+db.tasks.update({_id: ObjectId("xxx")}, {$set: {checked: true}});
+
+・コレクションの削除
+db.tasks.remove(ObjectId("xxx"));
+
+・参考
+http://qiita.com/svjunic/items/285e9cf20169d70aa1fa
+http://qiita.com/abgata20000/items/e287aad0235e10143641
+
